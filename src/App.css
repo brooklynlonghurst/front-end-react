@@ -87,9 +87,25 @@ footer {
 	height: 150px;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: center;
 }
 
-.facebookIcon {
+.footerMessage {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.iconContainer {
+	display: flex;
+}
+
+.socialIcon {
 	background-color: #538484;
 	border-radius: 50%;
 	width: 50px;
@@ -98,41 +114,12 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	text-align: center;
-	margin-right: 20%;
+    justify-content: center;
+	margin-top: 1rem;
+	/* margin-right: 0.5rem */
+	transform: scale(.65);
 }
 
-.instagramIcon {
-	background-color: #538484;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-align: center;
-	margin-right: 20%;
-}
-
-.twitterIcon {
-	background-color: #538484;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-align: center;
-	margin-right: 20%;
-}
-
-.githubIcon {
-	background-color: #538484;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	text-align: center;
-	margin-right: 20%;
+.svgStyles {
+	margin-right: 2rem;
 }
