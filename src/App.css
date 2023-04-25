@@ -133,6 +133,53 @@ header {
 	border: none;
 }
 
+.recipesBlock {
+	height: 500px;
+	display: flex;
+    justify-content: center;
+}
+
+.recipeCard {
+	overflow: hidden;
+    box-shadow: 0 1px 15px darkgray;
+    border-radius: radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition:transform 200ms ease-in;
+    background-color: white;
+	width: 20rem;
+    height: 25rem
+}
+
+.recipeCardImg {
+	height: 18rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardTitle {
+    background-color: white;
+    padding: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.cardButton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+    background-color: #578a8b;
+    cursor: pointer;
+	color: white;
+	width: 100px;
+    height: 35px;
+	border: none;
+	align-items: center;
+}
+
 footer {
 	background-color: #3e3e3e;
 	width: 100%;

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import AdBanner from './AdBanner'
 import axios from 'axios'
+import RecipeCard from '../RecipeCard'
 
 function HomeScreen(){  
   const [recipes, setRecipes] = useState([])
@@ -21,6 +22,7 @@ function HomeScreen(){
   return (
     <div>
       <AdBanner />
+      <RecipeCard />
       {/* Much code from Part 2 will be placed around here. Do your best! */}
     </div>
   )
