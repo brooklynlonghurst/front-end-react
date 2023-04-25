@@ -80,6 +80,38 @@ header {
 	text-decoration: none;
 }
 
+.adBanner {
+	height: 400px;
+}
+
+.newRecipeHeader {
+	font-family: 'Montserrat', sans-serif;
+	font-size: large;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+}
+
+.pineappleSalmonHeader {
+	font-family: 'Inter', sans-serif;
+	font-size: xx-large;
+	font-weight: 600;
+	color: #db7534;
+	text-align: center;
+}
+
+.recipeDescription {
+	font-family: 'Montserrat', sans-serif;
+	font-size: large;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+}
+
+.blue-btn {
+	background-color: #578a8b;
+	align-items: center;
+}
 
 footer {
 	background-color: #3e3e3e;
