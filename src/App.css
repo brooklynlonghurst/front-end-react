@@ -82,6 +82,9 @@ header {
 
 .adBanner {
 	height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .newRecipeHeader {
@@ -107,6 +110,14 @@ header {
 	color: white;
 	text-align: center;
 }
+
+.bannerButton {
+	display: flex;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 
 .blue-btn {
 	background-color: #578a8b;
