@@ -84,7 +84,6 @@ header {
 	height: 400px;
 	display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .newRecipeHeader {
@@ -93,6 +92,7 @@ header {
 	font-weight: 700;
 	color: white;
 	text-align: center;
+	margin-top: 2rem;
 }
 
 .pineappleSalmonHeader {
@@ -101,6 +101,7 @@ header {
 	font-weight: 600;
 	color: #db7534;
 	text-align: center;
+	margin-top: 3rem;
 }
 
 .recipeDescription {
@@ -109,6 +110,9 @@ header {
 	font-weight: 400;
 	color: white;
 	text-align: center;
+	margin-top: 2rem;
+	overflow: break-word;
+	width: 35rem
 }
 
 .bannerButton {
@@ -116,12 +120,17 @@ header {
     align-content: center;
     justify-content: center;
     text-decoration: none;
+	margin-top: 1rem;
 }
 
 
 .blue-btn {
 	background-color: #578a8b;
 	align-items: center;
+	color: white;
+	width: 100px;
+    height: 35px;
+	border: none;
 }
 
 footer {
