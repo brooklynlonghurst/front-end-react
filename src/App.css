@@ -240,7 +240,6 @@ header {
     box-shadow: 0 1px 10px darkgray;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
     background-color: white;
 	width: 20rem;
     height: 27rem;

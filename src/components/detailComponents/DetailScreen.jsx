@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import AdBanner from '../homeComponents/AdBanner';
-
+import { useParams } from 'react-router-dom';
+import axios from "axios"
 
 function DetailScreen() {  
+  const { id } = useParams()
+  const [recipe, setRecipe] = useState({})
+
+  useEffect(() => {
+    axios
+        .get(`https://recipes.devmountain.com/recipes/${id}`)
+        .then((res) => {
+          console.log(res.data)
+            setRecipe(res.data);
+        });
+  }, []);
+
   return (
     <section>
       <AdBanner />
@@ -10,16 +23,18 @@ function DetailScreen() {
         <div className="detailCardContainer">
           <div className='detailRecipeCard'>
           <h2 className='detailH2'>Recipe</h2>
-            <h4 className='deatailH4'>Prep Time: </h4>
-            <h4 className='deatailH4'>Cook Time: </h4>
-            <h4 className='deatailH4'>Serves: </h4>
+            <h4 className='deatailH4'>Prep Time: {recipe.prep_time} </h4>
+            <h4 className='deatailH4'>Cook Time: {recipe.cook_time}</h4>
+            <h4 className='deatailH4'>Serves: {recipe.serves} </h4>
             <br/>
             <h2 className='detailH2'>Ingredients</h2>
-            <h4 className='deatailH4'>2 Eggs</h4>
+            {recipe.ingredients && recipe.ingredients.map((ing, index) => {
+              return <h4 className='deatailH4'>{ing.quantity} {ing.ingredient}</h4>
+            })}
           </div>
           <div className='instructionCard'>
             <h2 className='detailH2'>Instructions</h2>
-            <h4 className='deatailH4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+            <h4 className='deatailH4'>{recipe.instructions && JSON.parse(recipe.instructions)}</h4>
           </div>
         </div>
       </div>
