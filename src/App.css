@@ -270,8 +270,15 @@ header {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	margin: .5rem;
-	
+	margin: .2rem;
+	text-indent: 8px;
+}
+
+.deataiInstructions {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	margin: .8rem;
 }
 
 .instructionCard {

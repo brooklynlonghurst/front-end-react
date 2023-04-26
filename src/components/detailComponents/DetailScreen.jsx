@@ -34,7 +34,7 @@ function DetailScreen() {
           </div>
           <div className='instructionCard'>
             <h2 className='detailH2'>Instructions</h2>
-            <h4 className='deatailH4'>{recipe.instructions && JSON.parse(recipe.instructions)}</h4>
+            <h4 className='deataiInstructions'>{recipe.instructions && JSON.parse(recipe.instructions)}</h4>
           </div>
         </div>
       </div>
