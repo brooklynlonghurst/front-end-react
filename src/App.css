@@ -298,7 +298,7 @@ header {
 
 .newRecipeBlock {
 	font-family: 'Montserrat', sans-serif;
-	height: 550px;
+	height: 760px;
 	/* display: flex; */
 }
 
@@ -326,22 +326,37 @@ header {
     flex-direction: row;
     justify-content: center;
 	gap: 2rem;
+	align-items: center;
 }
 
 .radioInput {
 	display: flex;
 	flex-direction: row;
     transform: scale(1.5);
-	
+	cursor: pointer;
+}
+
+.radioH5 {
+	display: flex;
+	gap: 2px;
 }
 
 .radioContainer {
 	display: flex;
-	gap: 3rem;
+	width: 100%;
+	justify-content: center;
+	gap: 25px;
+}
+
+.radioContainer span{
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
 }
 
 .textArea {
 	font-family: 'Montserrat', sans-serif;
+	width: 300px;
 }
 
 .submitButton {

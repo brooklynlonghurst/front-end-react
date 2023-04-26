@@ -22,7 +22,7 @@ const NewRecipeScreen = () => {
               type="radio"
               name="type"
             />
-            <h5>Cook</h5>
+            <h5 className="radioH5">Cook</h5>
           </span>
           <span>
             <input 
