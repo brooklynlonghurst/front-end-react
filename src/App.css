@@ -225,6 +225,16 @@ header {
 	margin-left: 110px;
 }
 
+.detailTitle {
+	font-family: 'Inter', sans-serif;
+	font-size: 50px;
+	font-weight: 600;
+	color: #db7534;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
 .detailScreenContainer {
 	height: 550px;
 	display: flex;

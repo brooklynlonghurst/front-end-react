@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import AdBanner from '../homeComponents/AdBanner';
+import DetailImage from './DetailImage';
 import { useParams } from 'react-router-dom';
 import axios from "axios"
 
@@ -18,7 +18,7 @@ function DetailScreen() {
 
   return (
     <section>
-      <AdBanner />
+      <DetailImage img = {recipe.image_url} name = {recipe.recipe_name}/>
       <div className="detailScreenContainer">
         <div className="detailCardContainer">
           <div className='detailRecipeCard'>
