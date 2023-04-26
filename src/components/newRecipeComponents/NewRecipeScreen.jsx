@@ -2,7 +2,7 @@ import React from "react";
 
 const NewRecipeScreen = () => {
   return (
-    <section>
+    <section className="newRecipeBlock">
       <h1 className="newRecipeH1">Tell us about your Recipe!</h1>
       <form className="newRecipeForm">
         <div className="inputContainer">
@@ -18,6 +18,7 @@ const NewRecipeScreen = () => {
         <div className="radioContainer">
           <span>
             <input 
+              className="radioInput"
               type="radio"
               name="type"
             />
@@ -25,6 +26,7 @@ const NewRecipeScreen = () => {
           </span>
           <span>
             <input 
+              className="radioInput"
               type="radio"
               name="type"
             />
@@ -32,6 +34,7 @@ const NewRecipeScreen = () => {
           </span>
           <span>
             <input 
+              className="radioInput"
               type="radio"
               name="type"
             />
@@ -61,7 +64,9 @@ const NewRecipeScreen = () => {
               placeholder="Quantity"
             />
           </div>
-          <ul>2 Eggs</ul>
+          <ul>
+            <li>2 Eggs</li>
+          </ul>
         </div>
         <button
           type="button"
@@ -76,10 +81,10 @@ const NewRecipeScreen = () => {
           className="textArea"
         />
         <button
-          type="submit"
-          placeholder="sumbutButton"
+          placeholder="submitButton"
+          className="submitButton"
         >
-          Sumbit
+          Save
         </button>
       </form>
     </section>

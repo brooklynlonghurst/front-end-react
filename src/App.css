@@ -296,10 +296,11 @@ header {
 	margin-right: 2rem;
 }
 
-section {
+.newRecipeBlock {
 	font-family: 'Montserrat', sans-serif;
+	height: 550px;
+	/* display: flex; */
 }
-
 
 .newRecipeH1 {
 	display: flex;
@@ -316,6 +317,7 @@ section {
     justify-content: center;
 	margin-top: 2rem;
 	align-items: center;
+	gap: 30px;
 }
 
 .inputContainer {
@@ -323,16 +325,45 @@ section {
 	display: flex;
     flex-direction: row;
     justify-content: center;
+	gap: 2rem;
+}
+
+.radioInput {
+	display: flex;
+	flex-direction: row;
+    transform: scale(1.5);
+	
 }
 
 .radioContainer {
 	display: flex;
-	flex-direction: row;
-    transform: scale(1.5);
+	gap: 3rem;
 }
 
 .textArea {
 	font-family: 'Montserrat', sans-serif;
+}
+
+.submitButton {
+	background-color: #578a8b;
+	align-items: center;
+	color: white;
+	width: 100px;
+    height: 35px;
+	border: none;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.addButton {
+	background-color: #db7534;
+	align-items: center;
+	color: white;
+	width: 110px;
+    height: 35px;
+	border: none;
+	font-size: medium;
+	cursor: pointer;
 }
 
 footer {
