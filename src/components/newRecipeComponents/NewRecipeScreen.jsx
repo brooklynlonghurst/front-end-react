@@ -9,10 +9,12 @@ const NewRecipeScreen = () => {
           <input 
             placeholder="Name"
             name="recipeName"
+            className="inputContainer1"
           />
           <input 
             placeholder="Image URL"
             name="imageURL"
+            className="inputContainer1"
           />
         </div>
         <div className="radioContainer">
@@ -45,27 +47,36 @@ const NewRecipeScreen = () => {
           <input 
             placeholder="Prep Time"
             name="prepTime"
+            className="inputContainer2"
           />
           <input 
             placeholder="Cook Time"
             name="cookTime"
+            className="inputContainer2"
           />
           <input 
             placeholder="Serves"
             name="serves"
+            className="inputContainer2"
           />
         </div>
         <div className="inputContainer">
           <div className="ingredientInput">
             <input 
               placeholder="Ingredient"
+              className="ingredientInput1"
             />
             <input 
               placeholder="Quantity"
+              className="ingredientInput1"
             />
           </div>
           <ul>
-            <li>2 Eggs</li>
+            <li
+              className="listContainer"
+            >2 Eggs</li>
+            <li>4 Cups of Sugar</li>
+            
           </ul>
         </div>
         <button
