@@ -382,11 +382,11 @@ header {
 .listContainer {
 	width: 170px;
 	font-size: 15px
-	
 }
 
 .textArea {
 	font-family: 'Montserrat', sans-serif;
+	font-size: medium;
 	width: 300px;
 }
 
