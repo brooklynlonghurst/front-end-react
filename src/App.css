@@ -123,7 +123,6 @@ header {
 	margin-top: 1rem;
 }
 
-
 .blue-btn {
 	background-color: #578a8b;
 	align-items: center;
@@ -300,7 +299,6 @@ header {
 .newRecipeBlock {
 	font-family: 'Montserrat', sans-serif;
 	height: 760px;
-	/* display: flex; */
 }
 
 .newRecipeH1 {
@@ -315,7 +313,6 @@ header {
 .newRecipeForm {
 	display: flex;
 	flex-direction: column;
-    /* justify-content: center; */
 	margin-top: 2rem;
 	align-items: center;
 	gap: 30px;
@@ -449,7 +446,6 @@ footer {
 	text-align: center;
     justify-content: center;
 	margin-top: 1rem;
-	/* margin-right: 0.5rem */
 	transform: scale(.65);
 }
 
