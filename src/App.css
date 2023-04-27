@@ -330,7 +330,6 @@ header {
 .inputContainer1 {
 	height: 25px;
 	font-size: medium;
-	border-radius: 6px;
 }
 
 .inputContainer2 {
@@ -338,7 +337,6 @@ header {
 	width: 6rem;
 	height: 25px;
 	font-size: medium;
-	border-radius: 6px;
 }
 
 .radioInput {
@@ -370,7 +368,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	border-radius: 6px;
 }
 
 .ingredientInput1 {
@@ -378,7 +375,6 @@ header {
 	font-size: medium;
 	display: flex;
 	justify-content: flex-start;
-	border-radius: 6px;
 }
 
 .listContainer {
@@ -390,7 +386,6 @@ header {
 	font-family: 'Montserrat', sans-serif;
 	font-size: medium;
 	width: 300px;
-	border-radius: 6px;
 }
 
 .submitButton {
