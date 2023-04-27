@@ -7,7 +7,7 @@ const NewRecipeScreen = () => {
   const [quantity, setQuantity] = useState("")
   const [ingredients, setIngredients] = useState([])
 
-  const addIngredient = () => {
+  function addIngredient() {
     setIngredients([...ingredients, { name, quantity }]);
     setName("");
     setQuantity("");
@@ -24,24 +24,24 @@ const NewRecipeScreen = () => {
     instructions: "",
   };
 
-  const onSubmit = (values) => {
+  function onSubmit(values) {
     values.ingredients = ingredients
     console.log(values)
+
+    axios 
+      .post(`https://recipes.devmountain.com/recipes`, values)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
 
-  axios 
-    .post(`https://recipes.devmountain.com/recipes`)
-    .then((res) => {
-      console.log(res.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-
   const ingredientDisplay = ingredients.map((ing) => {
     return (
-      <li>
+      <li className="listContainer">
         {ing.quantity} {ing.name}
       </li>
     );
@@ -139,9 +139,7 @@ const NewRecipeScreen = () => {
                   className="ingredientInput1"
                 />
               </div>
-              <ul>
-                <li className="listContainer">{ingredientDisplay}</li>
-              </ul>
+              <ul>{ingredientDisplay}</ul>
             </div>
             <button
               type="button"
